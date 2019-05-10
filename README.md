@@ -7,12 +7,15 @@ Run: `make image`
 ## Using
 
 This docker image takes 3 optional arguments:
+
 - REMOTE_HOST
 -- This defaults to 'localhost' if unprovided
 - REMOTE_PORT
 -- This defaults to '8993' if unprovided
 - LOCAL_CONTEXT
 -- This defaults to '' if unprovided, must end in `/`, may need to be escaped, e.g. `-e 'LOCAL_CONTEXT=ddf\/'`
+
+![Reverse Proxy](rev_prox.png)
 
 ### NOTE:
 After running the container following the example below, you will want to check what port got assigned to your machine for PAT to occur (`docker ps -a`).
