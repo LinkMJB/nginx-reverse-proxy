@@ -50,3 +50,7 @@ Email Address []:linkmjb@gmail.com
 ...
 ...
 ```
+
+### Accessing the desired endpoint via the reverse proxy
+- `docker ps` (look for your container/service, and take note of the ports exposed. Generally the 1st port will map to http/80, and the 2nd will map to https/8443)
+- Visit https://localhost:<https_port>/ in a web browser
