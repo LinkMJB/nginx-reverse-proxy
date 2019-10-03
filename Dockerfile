@@ -13,6 +13,7 @@ COPY ./nginx/nginx.conf /etc/nginx/
 
 RUN apt-get update && apt-get install openssl
 
+EXPOSE 80
 EXPOSE 8443
 
 COPY ./run.sh .
